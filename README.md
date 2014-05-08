@@ -43,7 +43,7 @@ ___
 
 下面的代码作为页面的基本骨架，剩下的部分将会基于这个骨架完成
 
-	<!doctype html>
+  <!doctype html>
     <html>
       <head>
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,21 +87,21 @@ ___
           </body>
     </html>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addstructure.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addstructure.html)
 
 #####添加页面内容
 
 基本架构我们已经完成，我们知道我们需要多少个篇章，以及各个篇章内的内容和它们准备放置的位置。我们现在开始构建网站.
 
-	大爷，别着急写样式
-	
+  大爷，别着急写样式
+  
 ######头部和表单
 
 头部和以及用户信息表单是页面的关键组成，这些必须非常清楚的展现给用户
 
 下面代码增加头部和一下表单项
 
-	<div id="headline">
+  <div id="headline">
       <div class="container">
         <h1>Mobile Web Development</h1>
         <h2>Building Mobile Web Experiences</h2>
@@ -132,15 +132,15 @@ ___
       </div>
     </div>
 
-[完整栗子](https://google-developers.appspot.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent)
+[完整例子](https://google-developers.appspot.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent)
 
 我们同样需要填写这表单，这个简单的表达收集用户名字，电话号码以及什么时候给他们电话最合适
 
 所有的表单都应该有标签和占位符（placeholder）让用户可以清楚注意和理解需要填写表单项内容，而且自动表单填写工具能够清楚理解表单结构，所有的name属性都应该可以告诉浏览器自动填写工具如何帮助用户填写表单，而不是仅仅发送请求给服务器
 
-我们需要设置input有意义的type属性，使得用户可以更加方便的输入表单内容。举个栗子，用户输入手机号的时候，用户应该只有看到数字键盘
+我们需要设置input有意义的type属性，使得用户可以更加方便的输入表单内容。举个例子，用户输入手机号的时候，用户应该只有看到数字键盘
 
-	<form method="post" id="register">
+  <form method="post" id="register">
       <h2>Register for the launch</h2>
       <label for="name">Name</label>
       <input type="text" name="name" id="name"
@@ -154,13 +154,13 @@ ___
       <input type="submit" value="Sign up">
     </form>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/withform.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/withform.html)
 
 ###### 添加视频和详细信息区域
 
 这个章节的内容一般相对更加有深度，通常有一个无序的产品功能介绍列和一个视频展现产品是如何服务用户的
 
-	<div id="section1">
+  <div id="section1">
       <div class="container">
         <h2>What will I learn?</h2>
         <p>After completing this class, you'll have built a web application with a first-class mobile experience.</p>
@@ -199,7 +199,7 @@ ___
       </p>
     </video>
     
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addvideo.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addvideo.html)
     
 ###### 添加图片区域
 
@@ -210,7 +210,7 @@ ___
 
 图片区域是一个我们产品图片集锦
 
-	<div id="section2">
+  <div id="section2">
       <div class="container">
         <h2>Who will teach me?</h2>
         <p>The worlds leading mobile web developers.</p>
@@ -223,16 +223,16 @@ ___
       </div>
     </div>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
 
 内容型图片是阐述内容的爆点，想想汪峰为什么上不了头条
 
-	 <div id="images">
+   <div id="images">
       <img src="chriswilson.png" alt="Chris Wilson Course Instructor">
       <img src="peterlubbers.png" alt="Peter Lubbers Course Instructor">
       <img src="seanbennett.png" alt="Sean Bennet Course Developer">
     </div>
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addimages.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addimages.html)
 
 图片宽度设置100%对窄屏端想对比较友好，但是在宽屏却不是，我们将会**使其响应式**章节详细讨论
 
@@ -242,7 +242,7 @@ ___
 
 Table标签应该用来而且仅用来展现表格数据，例如，矩阵型的数据
 
-	<div id="section3">
+  <div id="section3">
       <h2>Mobile. Why should I care?</h2>
       <p>It is huge.  Everywhere.</p>
       <table>
@@ -293,7 +293,7 @@ Table标签应该用来而且仅用来展现表格数据，例如，矩阵型的
       <br>
     </div>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
 
 ###### 增加FOOTER
 
@@ -301,13 +301,13 @@ Table标签应该用来而且仅用来展现表格数据，例如，矩阵型的
 
 在这个网站，我们只是单纯放置条款和期限，联系页面以及社交媒体介绍
 
-	<div id="footer">
+  <div id="footer">
       <div class="container">
         <p>We always need a footer.</p>
       </div>
     </div>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/addcontent.html)
 
 ##### 总结
 
@@ -349,9 +349,9 @@ Table标签应该用来而且仅用来展现表格数据，例如，矩阵型的
 
 veiwport告诉浏览器页面必须撑开到整个页面。veiwport有很多设置项你可以专门来控制你的页面，默认我们都是设置成：
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/viewport.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/viewport.html)
 
 viewport写在head而且只需要声明一次
 
@@ -369,32 +369,32 @@ viewport写在head而且只需要声明一次
 
 在上一章，我们已经完成了内容式图片的添加，这些图片对于产品描述是非常关键的。而炫酷式图片的不是内容上必要的，但是它是用户对各个内容关注度的指明灯
 
-一个很好的栗子就是首屏区域的图片，它们就是用来勾引用户进行更仔细的阅读（参考上面完成图）
+一个很好的例子就是首屏区域的图片，它们就是用来勾引用户进行更仔细的阅读（参考上面完成图）
 
-	#headline {
-  		padding: 0.8em;
-  		color: white;
-  		font-family: Roboto, sans-serif;
-  		background-image: url(backgroundimage.jpg);
-  		background-size: cover;
-	}
-	
+  #headline {
+      padding: 0.8em;
+      color: white;
+      font-family: Roboto, sans-serif;
+      background-image: url(backgroundimage.jpg);
+      background-size: cover;
+  }
+  
 我们使用模糊化的背景图片不会抢了内容的风头，同时我们使用**cover**让元素在被拉伸的时候仍然保持正确的比例
 
 ##### 设定你的第一个响应式宽度
 
-这个设计开始往凤姐方向发展在大概宽度为600px的时候，在现在这个栗子里，文本的长度就要超过10个单词（最佳英文阅读长度，中文呢？），这里就是我们要进行改造的点
+这个设计开始往凤姐方向发展在大概宽度为600px的时候，在现在这个例子里，文本的长度就要超过10个单词（最佳英文阅读长度，中文呢？），这里就是我们要进行改造的点
 
 600px似乎是一个很好的分界点，因为这个点给了我们空间去重塑元素的位置去适应屏幕，我们将使用[Media Queries](https://developers.google.com/web/fundamentals/documentation/multi-device-layouts/rwd-fundamentals/#use-css-media-queries-for-responsiveness)
 
-	@media (min-width: 600px) {
+  @media (min-width: 600px) {
     
-	}
-	
+  }
+  
 大屏的空间将会给我们更大的灵活性去展现我们的内容。
 
-	你不需要一次性重写所有的元素，只需要一些必要的小调整
-	
+  你不需要一次性重写所有的元素，只需要一些必要的小调整
+  
 对于页面的正文我们需要：
 
 - 限制设计的最大宽度
@@ -412,16 +412,16 @@ viewport写在head而且只需要声明一次
 
 为了做到这样效果，我们需要一个限制宽度和居中所有元素，我们要一个容器（container）包住所有主要区域和使用**margin：auto**。这在显示区域拖动的时候仍然能够保持最大宽度800px同时居中
 
-	<div class="container">...</div>
+  <div class="container">...</div>
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
-	.container {
+  .container {
       margin: auto;
       max-width: 800px;
     }
  
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
 ##### 改变padding和字体变小
 
@@ -431,11 +431,11 @@ viewport写在head而且只需要声明一次
 
 在我们的项目中，我们将会把区域的padding设置成宽度的5%，我们同时会增加每个区域头部的字体大小
 
-	#headline {
+  #headline {
       padding: 20px 5%;
     }
     
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
 ##### 使元素适应宽屏
 
@@ -454,7 +454,7 @@ viewport写在head而且只需要声明一次
 
 为了更加有效使用水平空间需要打破直线的头部布局使得表单和列表并列一起
 
-	#headline #blurb {
+  #headline #blurb {
       float: left;
       font-weight: 200;
       width: 50%;
@@ -473,13 +473,13 @@ viewport写在head而且只需要声明一次
       font-weight: 300;
     }
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
-	#headline {
+  #headline {
       padding: 20px 5%;
     }
     
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
 
 ###### 浮动视频元素
@@ -488,7 +488,7 @@ video标签在窄屏的情况下设计成全屏宽度显示并且放置在了关
 
 所以video元素需要移出垂直型的布局，放置倒关键点列表的旁边
 
-	#section1 ul {
+  #section1 ul {
       box-sizing: border-box;
       float: left;
       width: 50%;
@@ -500,15 +500,15 @@ video标签在窄屏的情况下设计成全屏宽度显示并且放置在了关
       float: right;
     }
 
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/fixingfirstbreakpoint.html)
 
 ###### 铺垫图片
 
 在窄屏的时候，图片是以全宽度进行垂直并列，但是要是宽屏的话就搓爆了
 
-为了让图片看起来比较舒服，此栗子把图片缩小到容器的宽度30%同时把图片都水平排列，同时加入了边界圆角（border-radius）和阴影（box-shadow）提高图片吸引力
+为了让图片看起来比较舒服，此例子把图片缩小到容器的宽度30%同时把图片都水平排列，同时加入了边界圆角（border-radius）和阴影（box-shadow）提高图片吸引力
 
-	#section2 div img {
+  #section2 div img {
        width: 30%;
        margin: 1%;
        box-sizing: border-box;
@@ -524,7 +524,7 @@ video标签在窄屏的情况下设计成全屏宽度显示并且放置在了关
 
 我们的解决方案还没有全面铺开，下面的代码有一部分支持的浏览器可以这么写（译者本人通常使用js来在加载页面的时候进行判断dpi然后设置对应的图片）
 
-	<img src="photo.png" srcset="photo@2x.png 2x" />  
+  <img src="photo.png" srcset="photo@2x.png 2x" />  
 
 ###### 表格
 
@@ -534,7 +534,7 @@ video标签在窄屏的情况下设计成全屏宽度显示并且放置在了关
 
 在我们的网站里，我们为表格单独创造了一级响应式宽度，因为我们是先构造窄屏的样式在先，导致很难消除已经完成的样式，所以我们必须先写表格的宽屏样式，然后再写窄屏样式，，这样让我们有一个更加清晰的样式分离（这句译者表示不一定翻译对了）
 
-	@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
       table thead {
         display: none;
       }
@@ -569,7 +569,7 @@ video标签在窄屏的情况下设计成全屏宽度显示并且放置在了关
       }
     }
     
-[完整栗子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/content-with-styles.html)
+[完整例子](https://developers.google.com/web/fundamentals/resources/samples/getting-started/your-first-multi-screen-site/content-with-styles.html)
 
 ##### 结束语
 
